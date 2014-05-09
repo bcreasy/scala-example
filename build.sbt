@@ -2,7 +2,7 @@ name <<= submitProjectName(pname => "progfun-"+ pname)
 
 version := "1.0.0"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.11.0"
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
@@ -25,9 +25,9 @@ libraryDependencies <++= (currentProject) { c =>
   if (c.isEmpty || c == "nodescala" || c == "suggestions") Seq(
     "com.netflix.rxjava" % "rxjava-scala" % "0.15.0",
     "org.json4s" % "json4s-native_2.10" % "3.2.5",
-    "org.scala-lang" % "scala-swing" % "2.10.3",
+    "org.scala-lang" % "scala-swing" % "2.11.0",
     "net.databinder.dispatch" % "dispatch-core_2.10" % "0.11.0",
-    "org.scala-lang" % "scala-reflect" % "2.10.3",
+    "org.scala-lang" % "scala-reflect" % "2.11.0",
     "org.slf4j" % "slf4j-api" % "1.7.5",
     "org.slf4j" % "slf4j-simple" % "1.7.5",
     "com.squareup.retrofit" % "retrofit" % "1.0.0",
